@@ -18,3 +18,4 @@ collections:
           - { label: "The Savage Combo Rate", name: "combo_price", widget: "string", default: "₹699" }
           - { label: "Root Conditioning Rate", name: "conditioning_price", widget: "string", default: "₹449" }
           - { label: "Client Testimonial Quote", name: "review_text", widget: "text" }
+- { label: "Opening Hours Text", name: "opening_hours", widget: "string", default: "Mon - Sat: 9:00 AM - 8:00 PM // Sun: Closed" }
