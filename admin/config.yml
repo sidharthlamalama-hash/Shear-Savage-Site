@@ -6,10 +6,21 @@ media_folder: "images" # Uploaded imagery will go into an images/ folder automat
 public_folder: "/images"
 
 collections:
+  - name: "blog"
+    label: "Blog Posts / Announcements"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Body Content", name: "body", widget: "markdown" }
+
   - name: "homepage"
     label: "Homepage Controls"
     files:
-      - file: "index.html" # It tells the CMS engine to read and write directly to index.html
+      - file: "index.html"
         label: "Main Landing UI"
         name: "landing"
         fields:
